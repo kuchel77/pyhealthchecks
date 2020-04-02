@@ -20,6 +20,9 @@ class HealthChecks():
         """ Update the url """
         self._ping_url = ping_url
 
+    def status(self):
+        return self._results
+
     async def update_connection(self):
         """ Sends the request """
         try:
